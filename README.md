@@ -2,6 +2,20 @@
 
 [![Component Registry](https://components.espressif.com/components/espressif/onewire_bus/badge.svg)](https://components.espressif.com/components/espressif/onewire_bus)
 
+## Provenance
+
+This repository is an unmodified extraction of the `onewire_bus` component from
+Espressif's [idf-extra-components](https://github.com/espressif/idf-extra-components)
+monorepo, split out with `git filter-repo --subdirectory-filter onewire_bus` so that it
+can be vendored as a standalone git submodule (the IDF component manager is not used).
+
+Upstream component: <https://github.com/espressif/idf-extra-components/tree/master/onewire_bus>
+
+Commit history is preserved, so this fork can be refreshed by re-running the same
+extraction against a newer upstream and rebasing/merging the result. Any local change
+should be kept as a commit on top of the extracted upstream history, so it stays visible
+as a delta against Espressif's component.
+
 This directory contains an implementation for Dallas 1-Wire bus by different peripherals.
 The following low-level backends are currently supported:
 
